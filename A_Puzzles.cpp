@@ -8,20 +8,19 @@ int main()
     int n,m;
     cin>>n>>m;
 
-    int arr[m];
-    for(int i=0; i<n; i++)
-    {
+    vector<int>arr(m);
+    for(int i=0; i<n; i++){
         cin>>arr[i];
     }
-    sort(arr,arr+m);
-    int dif = arr[m-1] - arr[0];
-    for(int i=1; i<=m-n; i++)
-    {
-        if(arr[i+n-1]-arr[i] < dif)
-        {
-            dif = arr[i+n-1]-arr[i];
+    sort(arr.begin(),arr.end());
+
+    int min_dif = INT_MAX;
+    for(int i=0; i<=m-n; i++){
+        int dif = arr[i+n-1] - arr[i];
+        if(dif < min_dif){
+            min_dif = dif;
         }
     }
-    cout<<dif<<endl;
+    cout<<min_dif<<endl;
     return 0;
 }
