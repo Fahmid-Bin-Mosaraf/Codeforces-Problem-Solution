@@ -1,0 +1,1 @@
+{"name":"Local: A_Football2","url":"d:\\Codeforces-Problem-Solution\\A_Football2.cpp","tests":[{"id":1730049961688,"input":"1\nABC","output":"ABC"},{"id":1730049985375,"input":"5\nA\nABA\nABA\nA\nA","output":"A"}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"d:\\Codeforces-Problem-Solution\\A_Football2.cpp","group":"local","local":true}
